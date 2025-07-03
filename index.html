@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="./global.css">
+    <link
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css"
+      integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <div class="form-container-add demo">
+      <div class="sub-form-add">
+        <i class="fa-solid fa-x"></i>
+        <form class="add-user-data">
+          <aside>
+            <h1>Add Users</h1>
+            <hr/>
+          </aside>
+          <input type="number" name="id" id="id" placeholder="Enter Id"/>
+          <input type="text" name="name" id="name" placeholder="Enter Name"/>
+          <input 
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+          />
+          <input 
+          type="email" 
+          name="email"
+          id="email"
+          placeholder="Enter Email"
+          />
+          <input type="tel" name="phone" id="phone" placeholder="Enter Phone"/>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!--! update form-->
+
+    <div class="form-container-update demo">
+      <div class="sub-form-add">
+        <i class="fa-solid fa-x close-btn"></i>
+        <form class="add-user-data" id="update-form">
+          <aside>
+            <h1>Update Users</h1>
+            <hr/>
+          </aside>
+          <input 
+            type="text"
+            name="name"
+            id="name-update"
+            placeholder="Enter Name"
+            />
+            <input 
+            type="text"
+            name="username"
+            id="username-update"
+            placeholder="Enter Username"
+            />
+            <input 
+            type="email"
+            name="email"
+            id="email-update"
+            placeholder="Enter Email"
+            />
+            <input 
+            type="tel"
+            name="phone"
+            id="phone-update"
+            placeholder="Enter Phone"
+            />
+            <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!--!----------------------------------------------- ----->
+
+    <section class="display-data"></section>
+
+    <section class="container">
+      <article>
+        <span class="add-user">Add ++</span>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>NAME</th>
+              <th>USERNAME</th>
+              <th>EMAIL</th>
+              <th>PHONE</th>
+              <th>MORE ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+    <script src="./App.js"></script>
+</body>
+</html>
